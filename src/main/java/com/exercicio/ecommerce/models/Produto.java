@@ -34,8 +34,9 @@ public class Produto {
 
 	@ManyToOne
 	@JsonBackReference
-	private Categoria categoria;
 	@JoinColumn(name = "categoria_id", referencedColumnName = "id")
+	private Categoria categoria;
+	
 	public Long getId() {
 		return id;
 	}
