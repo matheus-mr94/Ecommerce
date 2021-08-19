@@ -22,6 +22,7 @@ public class Funcionario {
 	private String nome;
 
 	@NotEmpty
+	@Column(unique = true)
 	private String matricula;
 
 	@NotEmpty
