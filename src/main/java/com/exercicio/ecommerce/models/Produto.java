@@ -29,7 +29,6 @@ public class Produto {
 
 	private String descricaoProduto;
 
-	@NotEmpty
 	private Integer qtdEmEstoque;
 
 	@ManyToOne

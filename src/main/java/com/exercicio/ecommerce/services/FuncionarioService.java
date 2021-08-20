@@ -33,7 +33,7 @@ public class FuncionarioService {
 			Funcionario funcionario = funcionarioMapper.toEntity(dto);
 			return funcionarioRepository.save(funcionario);
 		} catch (Exception e) {
-			throw new Exception("Matrícula já cadastrada");
+			throw new Exception("Erro ao cadastrar funcionário");
 		}
 	}
 

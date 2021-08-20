@@ -11,6 +11,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 @Table(name = "Categorias_de_Produtos")
 public class Categoria {
@@ -24,6 +26,7 @@ public class Categoria {
 	private String nome;
 
 	@OneToMany(mappedBy = "categoria")
+	@JsonBackReference
 	private List<Produto> produtos;
 
 	private String descricao;

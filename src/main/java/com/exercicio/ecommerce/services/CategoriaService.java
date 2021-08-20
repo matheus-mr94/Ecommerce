@@ -32,7 +32,7 @@ public class CategoriaService {
 			Categoria categoria = categoriaMapper.toEntity(dto);
 			return categoriaRepository.save(categoria);
 		}catch(Exception e){
-			throw new Exception("Categoria já cadastrada");
+			throw new Exception("Erro ao cadastrar categoria");
 		}
 	}
 	
